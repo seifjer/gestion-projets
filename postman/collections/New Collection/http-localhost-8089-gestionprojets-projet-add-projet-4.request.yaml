@@ -1,0 +1,21 @@
+$kind: http-request
+name: http://localhost:8089/gestionprojets/projet/add-projet
+description: ""
+url: http://localhost:8089/gestionprojets/projet/modify-projet
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"id\": 5,\r
+
+    \  \"nom\": \"Projet modifié\",\r
+
+    \  \"description\": \"Nouvelle description\",\r
+
+    \  \"dateDebut\": \"2026-10-20\",\r
+
+    \  \"dateFin\": \"2027-01-31\"\r
+
+    }"
+order: 5000

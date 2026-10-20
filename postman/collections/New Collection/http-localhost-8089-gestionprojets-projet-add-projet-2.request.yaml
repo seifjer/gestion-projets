@@ -1,0 +1,9 @@
+$kind: http-request
+name: http://localhost:8089/gestionprojets/projet/add-projet
+description: ""
+url: http://localhost:8089/gestionprojets/projet/retrieve-projet/5
+method: GET
+body:
+  type: json
+  content: ""
+order: 7000

@@ -1,0 +1,19 @@
+$kind: http-request
+name: http://localhost:8089/gestionprojets/projet/add-projet
+description: ""
+url: http://localhost:8089/gestionprojets/projet/add-projet
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"nom\": \"Projet 1\",\r
+
+    \  \"description\": \"Premier projet\",\r
+
+    \  \"dateDebut\": \"2026-10-20\",\r
+
+    \  \"dateFin\": \"2026-12-31\"\r
+
+    }"
+order: 1000
