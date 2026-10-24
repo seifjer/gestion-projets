@@ -4,9 +4,12 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.autoloc.gestionprojets.entities.Projet;
 import tn.esprit.autoloc.gestionprojets.services.IProjetService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 
 import java.util.List;
-
+@Tag(name = "Gestion Projet")
 @RestController
 @AllArgsConstructor
 @RequestMapping("/projet")
@@ -15,6 +18,8 @@ public class ProjetRestController {
     IProjetService projetService;
 
     // http://localhost:8089/gestionprojets/projet/retrieve-all-projets
+    @Operation(description = "Récupérer tous les projets de la base de données")
+
     @GetMapping("/retrieve-all-projets")
     public List<Projet> getProjets() {
         return projetService.retrieveAllProjets();
